@@ -124,10 +124,26 @@ body {
   margin-left: 20px;
   font-size: 20px;
 }
-.modal__data__close {
+.modal__data .close {
   display: block;
   margin: 40px auto 0;
   width: 200px;
   background-color: var(--first-color);
   transition: background-color 0.3s;
+}
+.modal__data .close:hover {
+  background-color: rgb(200, 30, 21);
+}
+
+.modal-animation {
+  animation: show-modal 0.5s;
+}
+
+@keyframes show-modal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
