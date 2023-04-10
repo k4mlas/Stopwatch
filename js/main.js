@@ -15,6 +15,7 @@ let second = 0;
 let minutes = 0;
 
 const timeArr = [];
+
 const timePlay = () => {
 	clearInterval(countTime);
 	countTime = setInterval(() => {
@@ -27,7 +28,7 @@ const timePlay = () => {
 		} else {
 			minutes++;
 			second = 0;
-			clock.textContent = `${minutes}:${second}`;
+			clock.textContent = `${minutes}:0${socond}`;
 		}
 	}, 100);
 };
@@ -38,13 +39,13 @@ const timePause = () => {
 
 const timeStop = () => {
 	if (clock.textContent !== '0:00') {
-		lastTime.innerHTML = `Twój ostatni czas to: ${clock.textContent}`;
 		lastTime.style.visibility = 'visible';
+		lastTime.innerHTML = `Twój ostatni czas to: ${clock.textContent}`;
 		timeArr.push(clock.textContent);
 		console.log(timeArr);
 	}
-	let minutes = 0;
-	let second = 0;
+	minutes = 0;
+	second = 0;
 	clock.textContent = `${minutes}:0${second}`;
 	clearInterval(countTime);
 };
