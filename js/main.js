@@ -50,6 +50,17 @@ const timeStop = () => {
 	clearInterval(countTime);
 };
 
+const timeReset = () => {
+	minutes = 0;
+	second = 0;
+	clock.textContent = `${minutes}:0${second}`;
+	lastTime.textContent = '';
+	timeArr.splice(0, timeArr.length);
+	clearInterval(countTime);
+	console.log(timeArr);
+};
+
 playBtn.addEventListener('click', timePlay);
 pauseBtn.addEventListener('click', timePause);
 stopBtn.addEventListener('click', timeStop);
+resetBtn.addEventListener('click', timeReset);
