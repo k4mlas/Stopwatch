@@ -90,8 +90,8 @@ body {
 .stopwatch__list li {
   display: flex;
   justify-content: space-between;
-  width: 300px;
-  font-size: 22px;
+  width: 18.75rem;
+  font-size: 1.375rem;
   color: var --second-color;
 }
 .stopwatch__list span {
@@ -99,6 +99,7 @@ body {
 }
 
 .modal {
+  display: none;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -109,25 +110,25 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 600px;
-  height: 360px;
+  width: 37.5rem;
+  height: 22.5rem;
   padding: 30px 60px;
   border-radius: 15px;
   background-color: rgb(245, 245, 245);
 }
 .modal__data h3 {
-  margin-bottom: 20px;
-  font-size: 30px;
+  margin-bottom: 1.25rem;
+  font-size: 1.875rem;
 }
 .modal__data p {
-  margin-bottom: 10px;
-  margin-left: 20px;
-  font-size: 20px;
+  margin-bottom: 0.625rem;
+  margin-left: 1.25rem;
+  font-size: 1.25rem;
 }
 .modal__data .close {
   display: block;
-  margin: 40px auto 0;
-  width: 200px;
+  margin: 2.5rem auto 0;
+  width: 12.5rem;
   background-color: var(--first-color);
   transition: background-color 0.3s;
 }
