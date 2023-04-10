@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kamil Łaskarzewski">
+    <meta name="keywords" content="stoper, czas, minutnik">
+    <meta name="description" content="Zmierz swój czas">
+    <title>Stoper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/a29ce9ae35.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="stopwatch">
+        <p class="stopwatch__info">
+            <i class="fas fa-question"></i>
+        </p>
+        <h1 class="stopwatch__title">stoper</h1>
+        <p class="stopwatch__time">0:00</p>
+        <p class="stopwatch__result">0:00</p>
+
+        <div class="stopwatch__btn">
+
+            <button class="stopwatch__btn__option stopwatch__btn__option--start"><i class="fas fa-play"></i></button>
+            <button class="stopwatch__btn__option stopwatch__btn__option--pause"><i class="fas fa-pause"></i></button>
+            <button class="stopwatch__btn__option stopwatch__btn__option--stop"><i class="fas fa-stop"></i></button>
+            <button class="stopwatch__btn__option stopwatch__btn__option--reset"><i class="fas fa-times"></i></button>
+            <button class="stopwatch__btn__history">archiwum</button>
+        </div>
+        <ul class="stopwatch__list"></ul>
+    </div>
+    <div class="modal">
+
+
+
+        <div class="modal__data">
+
+
+            <h3 class="modal__data__title">Instrukcja:</h3>
+            <p><i class="fas fa-play"></i> - start</p>
+            <p><i class="fas fa-pause"></i> - pauza</p>
+            <p><i class="fas fa-stop"></i> - stop</p>
+            <p><i class="fas fa-times"></i> - skasuj wszystko (łącznie z archiwum)</p>
+            <p><strong>archiwum</strong> - zobacz wcześniejsze pomiary</p>
+            <button class="modal__data__close">Zamknij</button>
+        </div>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
