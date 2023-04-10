@@ -10,7 +10,23 @@ const infoBtn = document.querySelector('.stopwatch__info');
 const modalShadow = document.querySelector('.modal');
 const modalBtn = document.querySelector('.close');
 
+let countTime;
+let second = 0;
+let minutes = 0;
 const timePlay = () => {
-	let minutes = minutes++;
+	countTime = setInterval(() => {
+		if (second < 9) {
+			second++;
+			clock.textContent = `${minutes}:0${second}`;
+		} else if (second >= 9 && second < 59) {
+			second++;
+			clock.textContent = `${minutes}:${second}`;
+		} else {
+			minutes++;
+			second = 0;
+			clock.textContent = `${minutes}:${second}`;
+		}
+	}, 100);
 };
-// timePlay();
+
+playBtn.addEventListener('click', timePlay);
