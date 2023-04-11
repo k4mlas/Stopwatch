@@ -28,7 +28,7 @@ const timePlay = () => {
 		} else {
 			minutes++;
 			second = 0;
-			clock.textContent = `${minutes}:0${socond}`;
+			clock.textContent = `${minutes}:0${second}`;
 		}
 	}, 100);
 };
@@ -48,6 +48,7 @@ const timeStop = () => {
 	second = 0;
 	clock.textContent = `${minutes}:0${second}`;
 	clearInterval(countTime);
+	timeList.textContent = '';
 };
 
 const timeReset = () => {
@@ -58,9 +59,19 @@ const timeReset = () => {
 	timeArr.splice(0, timeArr.length);
 	clearInterval(countTime);
 	console.log(timeArr);
+	timeList.textContent = '';
 };
 
-const timeHistory = () => {};
+const timeHistory = () => {
+	timeList.textContent = '';
+	let num = 1;
+	timeArr.forEach((x) => {
+		const itemLi = document.createElement('li');
+		timeList.appendChild(itemLi);
+		itemLi.innerHTML = `Pomiar nr ${num}: <span>${x}<span>`;
+		num++;
+	});
+};
 
 playBtn.addEventListener('click', timePlay);
 pauseBtn.addEventListener('click', timePause);
