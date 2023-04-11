@@ -60,7 +60,10 @@ const timeReset = () => {
 	console.log(timeArr);
 };
 
+const timeHistory = () => {};
+
 playBtn.addEventListener('click', timePlay);
 pauseBtn.addEventListener('click', timePause);
 stopBtn.addEventListener('click', timeStop);
 resetBtn.addEventListener('click', timeReset);
+historyBtn.addEventListener('click', timeHistory);
