@@ -73,8 +73,22 @@ const timeHistory = () => {
 	});
 };
 
+const infoModal = () => {
+	modalShadow.style.display = 'block';
+	modalShadow.classList.add('modal-animation');
+
+	modalBtn.addEventListener('click', (closed) => {
+		modalShadow.style.display = 'none';
+		modalShadow.classList.remove('modal-animation');
+	});
+};
+
 playBtn.addEventListener('click', timePlay);
 pauseBtn.addEventListener('click', timePause);
 stopBtn.addEventListener('click', timeStop);
 resetBtn.addEventListener('click', timeReset);
 historyBtn.addEventListener('click', timeHistory);
+infoBtn.addEventListener('click', infoModal);
+window.addEventListener('click', (e) =>
+	e.target === modalShadow ? (modalShadow.style.display = 'none') : false
+);
