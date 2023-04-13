@@ -92,3 +92,5 @@ infoBtn.addEventListener('click', infoModal);
 window.addEventListener('click', (e) =>
 	e.target === modalShadow ? (modalShadow.style.display = 'none') : false
 );
+
+//sdalej rovoc kolor
