@@ -94,3 +94,4 @@ window.addEventListener('click', (e) =>
 );
 
 //sdalej rovoc kolor
+//
