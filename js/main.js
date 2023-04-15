@@ -10,6 +10,7 @@ const infoBtn = document.querySelector('.stopwatch__info__quest');
 const brushBtn = document.querySelector('.stopwatch__info__brush');
 const modalShadow = document.querySelector('.modal');
 const modalBtn = document.querySelector('.close');
+const colors = document.querySelector('.stopwatch__colors');
 
 let countTime;
 let second = 0;
@@ -85,7 +86,7 @@ const infoModal = () => {
 };
 
 const colorsModal = () => {
-
+	colors.classList.toggle('showColors');
 };
 
 playBtn.addEventListener('click', timePlay);
@@ -98,4 +99,3 @@ brushBtn.addEventListener('click', colorsModal);
 window.addEventListener('click', (e) =>
 	e.target === modalShadow ? (modalShadow.style.display = 'none') : false
 );
-

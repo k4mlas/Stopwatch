@@ -75,7 +75,7 @@ body {
   visibility: hidden;
 }
 .stopwatch__colors {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -85,6 +85,7 @@ body {
   height: 250px;
   background-color: none;
   background: transparent;
+  transition: all 0.5s;
 }
 .stopwatch__colors > div {
   width: 40px;
@@ -186,6 +187,7 @@ body {
 
 .showColors {
   right: 10px;
+  display: flex;
 }
 
 .modal-animation {
