@@ -6,7 +6,8 @@ const historyBtn = document.querySelector('.stopwatch__btn__option--history');
 const clock = document.querySelector('.stopwatch__time');
 const lastTime = document.querySelector('.stopwatch__result');
 const timeList = document.querySelector('.stopwatch__list');
-const infoBtn = document.querySelector('.stopwatch__info');
+const infoBtn = document.querySelector('.stopwatch__info__quest');
+const brushBtn = document.querySelector('.stopwatch__info__brush');
 const modalShadow = document.querySelector('.modal');
 const modalBtn = document.querySelector('.close');
 
@@ -30,7 +31,7 @@ const timePlay = () => {
 			second = 0;
 			clock.textContent = `${minutes}:0${second}`;
 		}
-	}, 100);
+	}, 1000);
 };
 
 const timePause = () => {
