@@ -84,15 +84,18 @@ const infoModal = () => {
 	});
 };
 
+const colorsModal = () => {
+
+};
+
 playBtn.addEventListener('click', timePlay);
 pauseBtn.addEventListener('click', timePause);
 stopBtn.addEventListener('click', timeStop);
 resetBtn.addEventListener('click', timeReset);
 historyBtn.addEventListener('click', timeHistory);
 infoBtn.addEventListener('click', infoModal);
+brushBtn.addEventListener('click', colorsModal);
 window.addEventListener('click', (e) =>
 	e.target === modalShadow ? (modalShadow.style.display = 'none') : false
 );
 
-//sdalej rovoc kolor
-//

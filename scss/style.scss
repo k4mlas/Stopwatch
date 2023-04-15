@@ -84,6 +84,8 @@ body {
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
+		position: absolute;
+		right: -100px;
 		width: 80px;
 		height: 250px;
 		background-color: none;
@@ -194,6 +196,11 @@ body {
 			}
 		}
 	}
+}
+
+.showColors {
+	right: 10px;
+	
 }
 
 .modal-animation {
