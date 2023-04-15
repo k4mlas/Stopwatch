@@ -75,9 +75,37 @@ body {
   visibility: hidden;
 }
 .stopwatch__colors {
-  width: 100px;
-  height: 400px;
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 80px;
+  height: 250px;
+  background-color: none;
+  background: transparent;
+}
+.stopwatch__colors > div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0.5px solid black;
+  box-shadow: 0 0 20px black;
+  cursor: pointer;
+}
+.stopwatch__colors > div:hover {
+  box-shadow: 0 0 20px white;
+}
+.stopwatch__colors__red {
+  background-color: red;
+}
+.stopwatch__colors__blue {
+  background-color: blue;
+}
+.stopwatch__colors__green {
+  background-color: green;
+}
+.stopwatch__colors__yellow {
+  background-color: yellow;
 }
 .stopwatch__btn {
   display: flex;
