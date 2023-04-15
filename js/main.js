@@ -11,6 +11,11 @@ const brushBtn = document.querySelector('.stopwatch__info__brush');
 const modalShadow = document.querySelector('.modal');
 const modalBtn = document.querySelector('.close');
 const colors = document.querySelector('.stopwatch__colors');
+const colorOne = document.querySelector('.stopwatch__colors__red');
+const colorTwo = document.querySelector('.stopwatch__colors__blue');
+const colorThree = document.querySelector('.stopwatch__colors__green');
+const colorFour = document.querySelector('.stopwatch__colors__yellow');
+let root = document.documentElement;
 
 let countTime;
 let second = 0;
@@ -88,6 +93,21 @@ const infoModal = () => {
 const colorsModal = () => {
 	colors.classList.toggle('showColors');
 };
+
+colorOne.addEventListener('click', () => {
+	root.style.setProperty('--first-color', 'rgb(250, 20, 6)');
+});
+
+colorTwo.addEventListener('click', () => {
+	root.style.setProperty('--first-color', 'rgb(6, 173, 250)');
+});
+
+colorThree.addEventListener('click', () => {
+	root.style.setProperty('--first-color', 'rgb(0, 255, 42)');
+});
+colorFour.addEventListener('click', () => {
+	root.style.setProperty('--first-color', 'rgb(255,255,0)');
+});
 
 playBtn.addEventListener('click', timePlay);
 pauseBtn.addEventListener('click', timePause);
