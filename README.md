@@ -2,7 +2,7 @@
 
 I invite you to check my project by clicking on the link below
 
-### [Go to the page! 🙂](https://k4mlas.github.io/Stopwatch/)}
+### [Go to the page! 🙂](https://k4mlas.github.io/Stopwatch/)
 <br>
 
 <img width="1440" alt="Zrzut ekranu 2023-06-23 o 17 11 02" src="https://github.com/k4mlas/stopwatch/assets/112805847/bb66e8c3-4dc1-4fa6-89a1-d9572831c308">
